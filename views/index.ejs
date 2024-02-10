@@ -17,7 +17,7 @@
     <script>
         async function fetchMusicAlbums() {
             try {
-                const response = await fetch('/api/albums'); // Assuming you have an API endpoint to fetch albums
+                const response = await fetch('/api/albums'); 
                 const albums = await response.json();
                 const albumsContainer = document.getElementById('albums-container');
 
