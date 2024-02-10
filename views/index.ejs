@@ -23,7 +23,6 @@
                 const albums = await response.json();
                 const albumsContainer = document.getElementById('albums-container');
 
-                // Generate HTML for each album
                 albums.forEach(album => {
                     const albumDiv = document.createElement('div');
                     albumDiv.classList.add('album');
