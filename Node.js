@@ -22,7 +22,6 @@ async function getAlbums() {
     const musicPath = path.join(__dirname, 'public', 'Music');
     const albums = [];
 
-    // Read the contents of the Music directory
     const albumDirs = await fs.readdir(musicPath);
 
     for (const albumDir of albumDirs) {
