@@ -29,7 +29,6 @@ async function getAlbums() {
         const thumbnailPath = path.join(albumDirPath, 'thumbnail.png');
 
         if (fs.existsSync(thumbnailPath)) {
-            // Get the list of songs in the album directory
             const songs = (await fs.readdir(albumDirPath)).filter(file => file !== 'thumbnail.png');
             albums.push({
                 name: albumDir,
