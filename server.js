@@ -8,7 +8,6 @@ app.set('view engine', 'ejs');
 // Serve static files from the public directory
 app.use(express.static('public'));
 
-// Define routes
 app.get('/', (req, res) => {
   res.render('index');
 });
