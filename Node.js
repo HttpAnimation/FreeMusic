@@ -7,7 +7,6 @@ const PORT = process.env.PORT || 3000;
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
-// Define the route to get albums data
 app.get('/api/albums', async (req, res) => {
     try {
         const albums = await getAlbums();
