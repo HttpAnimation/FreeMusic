@@ -10,7 +10,6 @@ app.use(express.static('public'));
 
 // Define routes
 app.get('/', (req, res) => {
-  // Render the index.ejs file
   res.render('index');
 });
 
